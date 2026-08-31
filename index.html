@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mehdi Safaee - PhD student in Computer Science at UBC and senior machine learning engineer at Autodesk Research, working on generative AI and 3D geometry."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Mehdi Safaee</title>
+    <link rel="icon" type="image/png" href="icons/about.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="panel-backdrop" data-close-panel aria-hidden="true"></div>
+
+      <aside class="panel" id="site-panel" aria-label="Site navigation">
+        <div class="profile">
+          <img class="profile-photo" src="assets/me.jpg" alt="Portrait of Mehdi Safaee" />
+          <div class="profile-copy">
+            <h1>Mehdi Safaee</h1>
+            <p>Senior Machine Learning Engineer</p>
+            <span>Autodesk Research</span>
+            <p class="profile-secondary-role">PhD Student in Computer Science</p>
+            <span>University of British Columbia</span>
+          </div>
+        </div>
+
+        <nav class="panel-nav">
+          <a class="nav-item is-active" href="#about" data-page="about">
+            <img class="nav-icon" src="icons/about.png" alt="" aria-hidden="true" />
+            <span>About</span>
+          </a>
+          <a class="nav-item" href="#experience" data-page="experience">
+            <img class="nav-icon" src="icons/experience.png" alt="" aria-hidden="true" />
+            <span>Experience</span>
+          </a>
+          <a class="nav-item" href="#education" data-page="education">
+            <img class="nav-icon" src="icons/education.png" alt="" aria-hidden="true" />
+            <span>Education</span>
+          </a>
+          <a class="nav-item" href="#publications" data-page="publications">
+            <img class="nav-icon" src="icons/publications.png" alt="" aria-hidden="true" />
+            <span>Publications</span>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main-shell">
+        <header class="toolbar">
+          <button
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-controls="site-panel"
+            aria-expanded="false"
+            data-open-panel
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <div class="breadcrumb" aria-live="polite">
+            <span>Mehdi Safaee</span>
+            <span class="breadcrumb-separator">/</span>
+            <strong data-current-title>About</strong>
+          </div>
+          <div class="toolbar-links">
+            <a href="mailto:mehdi0xc@gmail.com">Email</a>
+            <a href="https://github.com/Mehdi0xC" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </header>
+
+        <div class="workspace" id="workspace">
+          <article class="page-view is-active" data-view="about" aria-labelledby="about-title">
+            <header class="page-intro compact about-intro">
+              <h2 id="about-title">About</h2>
+              <p class="lede">
+                I am a Senior Machine Learning Engineer at <strong>Autodesk Research</strong> and a PhD student in Computer Science at the <strong>University of British Columbia</strong> under Professor <strong>Leonid Sigal</strong> and Professor <strong>Andrea Tagliasacchi</strong>. My interests include <strong>computer vision, generative AI, and physical simulations</strong>.
+              </p>
+              <p class="lede">
+                Prior to this, I completed my master's degree in Computer Science at <strong>Simon Fraser University</strong>, working with Professor <strong>Ali Mahdavi-Amiri</strong> and Professor <strong>Daniel Cohen-Or</strong> on concept learning in diffusion models and 3D editing using Neural Radiance Fields. Before that, I earned my bachelor's degree in Computer Engineering at <strong>Amirkabir University of Technology</strong>, with a particular focus on hardware acceleration for AI.
+              </p>
+            </header>
+
+            <section class="showcase-grid" aria-label="Selected work">
+              <figure class="showcase-item">
+                <img
+                  src="assets/showcase/convex-decomposition.webp"
+                  width="844"
+                  height="920"
+                  alt="Chair and plant models shown alongside convex decompositions"
+                  decoding="async"
+                />
+              </figure>
+              <figure class="showcase-item">
+                <img
+                  src="assets/showcase/cad-generation.webp"
+                  width="930"
+                  height="930"
+                  alt="Generated CAD objects with segmented geometric parts"
+                  decoding="async"
+                />
+              </figure>
+              <figure class="showcase-item showcase-item-wide">
+                <img
+                  src="assets/showcase/3dify-anything.webp"
+                  width="1800"
+                  height="644"
+                  alt="3Dify-Anything multimodal 3D generation overview"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <figure class="showcase-item showcase-item-wide">
+                <img
+                  src="assets/showcase/3d-editing.webp"
+                  width="1800"
+                  height="700"
+                  alt="Sketch- and text-guided editing examples for 3D neural scenes"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <figure class="showcase-item showcase-item-wide">
+                <img
+                  src="assets/showcase/part-aware-generation-editing.webp"
+                  width="1685"
+                  height="603"
+                  alt="Examples of part-aware 3D generation and editing"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </section>
+          </article>
+
+          <article class="page-view" data-view="experience" aria-labelledby="experience-title" hidden>
+            <header class="page-intro compact">
+              <h2 id="experience-title">Experience</h2>
+              <p class="lede">Research and engineering work across generative AI, vision, geometry, and data systems.</p>
+            </header>
+
+            <section class="timeline" aria-label="Professional experience">
+              <article class="timeline-entry">
+                <div class="timeline-meta"><span>May 2026 - Present</span><small>Vancouver, Canada</small></div>
+                <div class="timeline-content">
+                  <p class="organization">University of British Columbia</p>
+                  <h3>Research Assistant / PhD Student</h3>
+                  <p class="engagement">Full-time PhD student</p>
+                  <ul>
+                    <li>Researching computational geometry methods for improving AI-based physical simulations.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-entry">
+                <div class="timeline-meta"><span>Sep 2024 - Present</span><small>Vancouver, Canada</small></div>
+                <div class="timeline-content">
+                  <p class="organization">Autodesk</p>
+                  <h3>Senior Machine Learning Engineer</h3>
+                  <p class="engagement">Full-time through Apr 2026 &middot; Part-time since May 2026</p>
+                  <ul>
+                    <li>Working on CAD generation using generative AI.</li>
+                    <li>Researching efficient methods for autoregressive 3D generation.</li>
+                    <li>Designing data pipelines for large-scale data preprocessing.</li>
+                    <li>Developing scalable workflows for large-scale model training.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-entry">
+                <div class="timeline-meta"><span>Feb 2024 - Aug 2024</span><small>Vancouver, Canada</small></div>
+                <div class="timeline-content">
+                  <p class="organization">Pacific Laboratory for AI, University of British Columbia</p>
+                  <h3>Research Engineer</h3>
+                  <ul><li>Worked on a large-scale data acquisition project using Minecraft for embodied AI research.</li></ul>
+                </div>
+              </article>
+
+              <article class="timeline-entry">
+                <div class="timeline-meta"><span>Jan 2022 - Apr 2024</span><small>Burnaby, Canada</small></div>
+                <div class="timeline-content">
+                  <p class="organization">GrUVi (Graphics+Vision) Lab, Simon Fraser University</p>
+                  <h3>Research and Teaching Assistant</h3>
+                  <ul>
+                    <li>Researched diffusion models and generative AI for 3D geometry.</li>
+                    <li>Collaborated with researchers from Tel Aviv University and NVIDIA on publications at ICCV 2023 and CVPR 2024.</li>
+                    <li>Served as a teaching assistant for courses in SFU's Professional Master's Program.</li>
+                    <li>Researched raindrop and occlusion removal for autonomous driving in adverse weather.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-entry">
+                <div class="timeline-meta"><span>Mar 2022 - Sep 2023</span><small>Vancouver, Canada</small></div>
+                <div class="timeline-content">
+                  <p class="organization">Matt3r Technologies Inc.</p>
+                  <h3>Machine Learning Engineer</h3>
+                  <ul>
+                    <li>Developed cloud-based data-processing solutions for autonomous-driving data.</li>
+                    <li>Built optimized edge-computer vision systems for road-object detection and crowdedness regression.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-entry">
+                <div class="timeline-meta"><span>Dec 2019 - Nov 2021</span><small>Tehran, Iran</small></div>
+                <div class="timeline-content">
+                  <p class="organization">Zamin Pajoohan Paya</p>
+                  <h3>Software Engineer</h3>
+                  <ul>
+                    <li>Developed data structures and scripts for processing 3D geometry and GIS data.</li>
+                    <li>Developed AutoCAD plugins for automating civil-engineering design workflows.</li>
+                    <li>Researched various deep-learning methods for anomaly/fault detection.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-entry">
+                  <div class="timeline-meta"><span>Jun 2017 - Sep 2017</span><small>Pardis, Iran</small></div>
+                <div class="timeline-content">
+                  <p class="organization">Institute for Cognitive Science Studies</p>
+                  <h3>Internship</h3>
+                  <ul>
+                    <li>Studied methods for acquiring and processing fNIRS, EEG, and fMRI signals.</li>
+                    <li>Implemented MATLAB scripts for denoising and visualizing fNIRS signals.</li>
+                  </ul>
+                </div>
+              </article>
+
+            </section>
+          </article>
+
+          <article class="page-view" data-view="education" aria-labelledby="education-title" hidden>
+            <header class="page-intro compact">
+              <h2 id="education-title">Education</h2>
+            </header>
+
+            <section class="education-grid">
+              <article class="education-card">
+                <div class="education-card-top">
+                  <div class="education-card-copy">
+                    <div class="education-year">May 2026 - Present</div>
+                    <p class="organization">University of British Columbia</p>
+                    <h3>PhD in Computer Science</h3>
+                    <p class="education-place">Vancouver, Canada</p>
+                  </div>
+                  <img class="education-image" src="assets/education/ubc.png" alt="University of British Columbia" loading="lazy" decoding="async" />
+                </div>
+                <dl>
+                  <div><dt>Research topic</dt><dd>Computational Geometry and Physical Simulations</dd></div>
+                  <div><dt>Supervisor</dt><dd>Prof. Leonid Sigal, University of British Columbia</dd></div>
+                  <div><dt>Co-supervisor</dt><dd>Prof. Andrea Tagliasacchi, Simon Fraser University</dd></div>
+                </dl>
+              </article>
+
+              <article class="education-card">
+                <div class="education-card-top">
+                  <div class="education-card-copy">
+                    <div class="education-year">2022 - 2024</div>
+                    <p class="organization">Simon Fraser University</p>
+                    <h3>M.Sc. in Computer Science</h3>
+                    <p class="education-place">Burnaby, Canada &middot; GPA 4.09/4.33</p>
+                  </div>
+                  <img class="education-image" src="assets/education/sfu.jpg" alt="Simon Fraser University" loading="lazy" decoding="async" />
+                </div>
+                <dl>
+                  <div><dt>Thesis</dt><dd>In-Context Concept Learning in Diffusion Models</dd></div>
+                  <div><dt>Supervisor</dt><dd>Prof. Ali Mahdavi-Amiri</dd></div>
+                  <div><dt>Committee and mentorship</dt><dd>Prof. Daniel Cohen-Or, Tel Aviv University</dd></div>
+                </dl>
+              </article>
+
+              <article class="education-card">
+                <div class="education-card-top">
+                  <div class="education-card-copy">
+                    <div class="education-year">2013 - 2019</div>
+                    <p class="organization">Amirkabir University of Technology</p>
+                    <h3>B.Sc. in Computer Engineering</h3>
+                    <p class="education-place">Tehran, Iran &middot; GPA 16.47/20</p>
+                  </div>
+                  <img class="education-image" src="assets/education/aut.png" alt="Amirkabir University of Technology" loading="lazy" decoding="async" />
+                </div>
+                <dl>
+                  <div><dt>Thesis</dt><dd>Digital implementation of deep reinforcement learning (DQN) for an intelligent pathfinding agent</dd></div>
+                  <div><dt>Supervisor</dt><dd>Prof. Mehdi Sedighi</dd></div>
+                  <div><dt>Minor</dt><dd>Electrical Engineering</dd></div>
+                </dl>
+              </article>
+            </section>
+          </article>
+
+          <article class="page-view" data-view="publications" aria-labelledby="publications-title" hidden>
+            <header class="page-intro compact">
+              <h2 id="publications-title">Publications</h2>
+              <p class="lede">Work in concept learning, generative modeling, 3D editing, and equivariant latent flow matching.</p>
+            </header>
+
+            <section class="publication-list">
+              <article class="publication">
+                <span class="publication-index">01</span>
+                <div>
+                  <p class="publication-venue">CVPR 2024 &middot; Highlight</p>
+                  <h3>CLiC: Concept Learning in Context</h3>
+                  <p><strong class="publication-author">M. Safaee</strong>, A. Mikaeili, O. Patashnik, D. Cohen-Or, and A. Mahdavi-Amiri.</p>
+                </div>
+              </article>
+              <article class="publication">
+                <span class="publication-index">02</span>
+                <div>
+                  <p class="publication-venue">ICCV 2023</p>
+                  <h3>SKED: Sketch-Guided Text-Based 3D Editing</h3>
+                  <p>A. Mikaeili, O. Perel, <strong class="publication-author">M. Safaee</strong>, D. Cohen-Or, and A. Mahdavi-Amiri.</p>
+                </div>
+              </article>
+              <article class="publication">
+                <span class="publication-index">03</span>
+                <div>
+                  <p class="publication-venue">ICLR 2026 GRaM Workshop</p>
+                  <h3>Eq-WaLa: Equivariant Augmentation and Regularization for Wavelet Latent Flow Matching</h3>
+                  <p>K.-H. Hui, A. Rampini, P. Reddy, <strong class="publication-author">M. Safaee</strong>, A. Sanghi, and P. K. Jayaraman.</p>
+                </div>
+              </article>
+              <article class="publication">
+                <span class="publication-index">04</span>
+                <div>
+                  <p class="publication-venue">ECCV 2026 MUCG Workshop</p>
+                  <h3>3Dify-Anything: A Unified Model for Multimodal 3D Generation via Context Pre-Training</h3>
+                  <p>A. Sanghi, <strong class="publication-author">M. Safaee</strong>, H. Kumar, V. Antonino, K. Madan, and H. Shayani.</p>
+                </div>
+              </article>
+            </section>
+          </article>
+
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
