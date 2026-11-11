@@ -489,10 +489,20 @@ a {
   line-height: 1.1;
 }
 
-.publication p:last-child {
+.publication p:last-of-type {
   margin: 0;
   color: var(--muted);
   font-size: 16px;
+}
+
+.publication-teaser {
+  margin: 22px 0 0;
+}
+
+.publication-teaser img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .panel-backdrop {
